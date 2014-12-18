@@ -1,0 +1,9 @@
+{application,yaws,
+ [{description,"yaws WWW server"},
+  {vsn, "1.98"},
+  {registered, []},
+  {mod,{yaws_app,[]}},
+  {env, [
+         {embedded, true}                 % true | false
+        ]},
+  {applications,[kernel,stdlib]}]}.

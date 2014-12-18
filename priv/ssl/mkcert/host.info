@@ -1,0 +1,58 @@
+SHA1 Fingerprint=AD:B5:C7:91:2D:CE:4A:CD:C3:DE:2F:39:C9:2C:86:DE:DC:AA:C3:E9
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 10767894011079237819 (0x956f3e8d656f20bb)
+    Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=GB, ST=Hert, L=Hatfield, O=EE, OU=NSSDD, CN=eewebgui/emailAddress=ferenc.holzhauser@flintmail.som
+        Validity
+            Not Before: Jun 21 12:27:28 2014 GMT
+            Not After : Jun 18 12:27:28 2024 GMT
+        Subject: C=GB, ST=Hert, L=Hatfield, O=EE, OU=NSSDD, CN=eewebgui/emailAddress=ferenc.holzhauser@flintmail.som
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:ca:cf:4d:39:32:ac:4e:a1:41:02:81:54:6a:eb:
+                    0a:81:ed:8e:d5:15:b1:d2:d3:c6:6b:37:f7:4d:63:
+                    cf:22:9b:71:44:9e:8a:75:ab:9f:69:01:b6:a8:a7:
+                    00:e1:99:ab:74:d2:13:24:ca:8b:e9:e1:7e:ff:c8:
+                    83:23:75:95:7f:e8:4d:c8:c7:33:55:8d:6f:af:30:
+                    87:e8:07:ca:4d:ea:72:af:ac:32:c2:15:9e:73:b7:
+                    05:0e:a5:63:44:46:56:04:c7:1a:e5:c1:61:c6:e0:
+                    2e:61:5a:62:8e:42:8a:83:91:e9:e0:dd:cb:98:4f:
+                    3e:19:9f:83:a6:da:14:18:46:4c:6d:70:c1:57:c2:
+                    d0:a3:37:0f:16:66:7a:fc:64:d0:e4:60:9d:72:fc:
+                    8b:fd:19:54:14:4d:05:47:ed:0d:4e:2f:04:9b:59:
+                    88:bd:b2:f5:26:8c:60:68:7f:a9:e5:db:a6:2e:db:
+                    41:a9:84:77:ca:f3:d3:79:76:b5:16:d5:62:dc:44:
+                    a3:62:ba:b7:b5:f0:54:62:0f:b1:85:91:a3:68:04:
+                    4a:6b:97:97:9d:d4:73:a8:d2:21:b0:50:2a:8e:87:
+                    8a:60:dc:6f:fc:c8:5b:71:40:3f:9f:5d:9a:5e:8a:
+                    4f:b7:e8:4e:ad:07:5a:be:a6:4c:3f:60:52:90:41:
+                    c7:7d
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                5D:0A:24:85:C3:26:5C:D9:5C:1C:80:9C:10:DC:85:B9:34:01:64:07
+            X509v3 Authority Key Identifier: 
+                keyid:5D:0A:24:85:C3:26:5C:D9:5C:1C:80:9C:10:DC:85:B9:34:01:64:07
+
+            X509v3 Basic Constraints: 
+                CA:TRUE
+    Signature Algorithm: sha1WithRSAEncryption
+         66:ed:64:b8:0d:8d:ea:9d:93:ed:5a:53:93:a5:ae:48:cc:93:
+         71:ec:ed:73:44:67:07:37:ca:ef:c7:c5:e5:e2:4d:d6:1a:be:
+         65:35:30:d8:1e:45:6e:eb:3c:3c:8f:fc:3f:f5:ef:66:5f:78:
+         45:64:07:bf:85:8d:97:12:43:04:c5:78:f8:87:25:0d:cc:56:
+         ab:de:5f:34:c0:d1:eb:3f:e4:c4:c9:a7:ed:78:51:bd:be:04:
+         ce:cd:e6:97:e0:95:98:65:f8:08:80:e7:fa:79:9d:49:3c:4c:
+         97:5b:1d:22:30:2f:e0:c3:08:44:9f:4c:a3:fb:8b:25:83:db:
+         d1:61:50:0c:a8:25:aa:f4:87:c2:1e:cf:5f:f2:60:88:db:e8:
+         97:a6:d0:84:6c:86:ff:ac:58:a7:38:02:c8:f2:bd:7c:e2:b1:
+         18:fc:75:1a:be:b1:7e:84:9f:51:92:3a:62:04:d5:cf:4c:3a:
+         c1:fa:61:bd:f9:50:01:ae:96:65:11:c3:f3:39:23:31:22:67:
+         09:c8:fc:cc:16:35:c3:90:1e:7a:87:62:51:ac:c7:c3:0c:d5:
+         1a:49:52:49:26:d0:d4:04:a9:bc:ed:df:8a:69:10:b5:41:2e:
+         4b:7f:49:ef:2d:5e:8f:48:64:57:fb:29:ee:a9:24:0c:f7:c8:
+         9f:e5:a7:48
