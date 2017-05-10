@@ -147,7 +147,7 @@ create_temp_file(State) ->
             FilePath =
                 case State#upload.fixed_filename of
                     undefined ->
-                        {A, B, C} = now(),
+                        {A, B, C} = erlang:timestamp(),
                         FileName = yaws:join_sep(["yaws",
                                                   integer_to_list(A),
                                                   integer_to_list(B),

@@ -625,7 +625,7 @@ gserv_loop(GS, Ready, Rnum, Last) ->
                     ?MODULE:gserv_loop(GS2, Ready, Rnum, Last);
                 Rnum < PoolSize ->
                     %% cache this process for 10 secs
-                    ?MODULE:gserv_loop(GS2, [{now(), From} | Ready],
+                    ?MODULE:gserv_loop(GS2, [{erlang:timestamp(), From} | Ready],
                                        Rnum+1, Last)
             end;
         {'EXIT', Pid, Reason} ->
@@ -845,7 +845,7 @@ gserv_loop(GS, Ready, Rnum, Last) ->
             ?MODULE:gserv_loop(GS2, Ready2, 0, New)
     after (10 * 1000) ->
             %% collect old procs, to save memory
-            {NowMega, NowSecs, _} = now(),
+            {NowMega, NowSecs, _} = erlang:timestamp(),
             R2 = lists:filter(fun({{ThenMega, ThenSecs, _}, Pid}) ->
                                       if
                                           NowMega > ThenMega;
@@ -1518,7 +1518,7 @@ maybe_access_log(Ip, Req, H) ->
     SC=get(sc),
     case ?sc_has_access_log(SC) of
         true ->
-            Time = timer:now_diff(now(), get(request_start_time)),
+            Time = timer:now_diff(erlang:timestamp(), get(request_start_time)),
             yaws_log:accesslog(SC, Ip, Req, H, get(outh), Time);
         false ->
             ignore
@@ -4052,7 +4052,7 @@ crnl() ->
     "\r\n".
 
 now_secs() ->
-    {M,S,_}=now(),
+    {M,S,_}=erlang:timestamp(),
     (M*1000000)+S.
 
 

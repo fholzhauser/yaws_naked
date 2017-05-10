@@ -695,7 +695,7 @@ htmlize_l([X|Tail], Ack) when is_list(X) ->
 
 
 secs() ->
-    {MS, S, _} = now(),
+    {MS, S, _} = erlang:timestamp(),
     (MS * 1000000) + S.
 
 cookie_option(secure) ->

@@ -1559,7 +1559,7 @@ make_www_authenticate_header(Method) ->
     ["WWW-Authenticate: ", Method, ["\r\n"]].
 
 make_date_header() ->
-    N = element(2, now()),
+    N = element(2, erlang:timestamp()),
     case get(date_header) of
         {_Str, Secs} when (Secs+10) < N ->
             H = ["Date: ", universal_time_as_string(), "\r\n"],
@@ -2077,7 +2077,7 @@ do_http_get_headers(CliSock, SSL) ->
         R ->
             %% Http request received. Store the current time. it will be usefull
             %% to get the time taken to serve the request.
-            put(request_start_time, now()),
+            put(request_start_time, erlang:timestamp()),
             case http_collect_headers(CliSock, R,  #headers{}, SSL, 0) of
                 {error, _}=Error ->
                     Error;
@@ -2410,7 +2410,7 @@ mktemp(Template, Ret) ->
     mktemp(Tdir, Template, Ret, 0, Max, "").
 
 mktemp(Dir, Template, Ret, I, Max, Suffix) when I < Max ->
-    {X,Y,Z}  = now(),
+    {X,Y,Z}  = erlang:timestamp(),
     PostFix = erlang:integer_to_list(X) ++ "-" ++
         erlang:integer_to_list(Y) ++ "-" ++
         erlang:integer_to_list(Z),

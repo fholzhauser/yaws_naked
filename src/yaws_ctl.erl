@@ -55,9 +55,9 @@ run(GC) ->
 rand() ->
     case os:type() of
         {win32, _} ->
-            {A1, A2, A3}=now(),
-            random:seed(A1, A2, A3),
-            random:uniform(1 bsl 64);
+            {A1, A2, A3}=erlang:timestamp(),
+            rand:seed(A1, A2, A3),
+            rand:uniform(1 bsl 64);
         _ ->
             try
                 crypto:start(),
@@ -65,9 +65,9 @@ rand() ->
             catch
                 _:_ ->
                     error_logger:warning_msg("Running without crypto app\n"),
-                    {A1, A2, A3}=now(),
-                    random:seed(A1, A2, A3),
-                    random:uniform(1 bsl 64)
+                    {A1, A2, A3}=erlang:timestamp(),
+                    rand:seed(A1, A2, A3),
+                    rand:uniform(1 bsl 64)
             end
     end.
 
